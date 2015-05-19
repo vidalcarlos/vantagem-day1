@@ -1,0 +1,41 @@
+<?xml version='1.0' encoding='UTF-8'?>
+
+<!--
+    TODO define vocabulary identification
+    PUBLIC ID: -//vendor//vocabulary//EN
+    SYSTEM ID: http://server/path/my1xml_10.dtd
+
+-->
+
+<!--
+    An example how to use this DTD from your XML document:
+
+    <?xml version="1.0"?>
+
+    <!DOCTYPE catalogo SYSTEM "my1xml_10.dtd">
+
+    <catalogo>
+    ...
+    </catalogo>
+-->
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT catalogo (id)*>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT id (nome|data_nasc|naturalidade)*>
+<!ATTLIST id
+    tag CDATA #IMPLIED
+  >
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT nome (#PCDATA)>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT data_nasc (#PCDATA)>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT naturalidade (#PCDATA)>
+<!ATTLIST naturalidade
+    lang CDATA #IMPLIED
+  >

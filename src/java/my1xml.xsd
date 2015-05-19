@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+
+<xs:schema version="1.0"
+           xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           elementFormDefault="qualified">
+    
+    <xs:annotation>
+         
+        <xs:documentation>
+            Validação base de dados Maravilhas
+        </xs:documentation>
+    
+    </xs:annotation>
+    
+    <xs:element name="id">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="nome" type="xs:string"/>
+                <xs:element name="data_nasc" type="xs:date"/>
+                <xs:element name="naturalidade" type="xs:string"/>
+                <xs:element name="link" type="xs:string"/>
+            </xs:sequence>
+        </xs:complexType>         
+    </xs:element>
+    <xs:element name="catalogo">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="id" maxOccurs="unbounded"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+                    
+    
+    
+                                  
+
+</xs:schema>

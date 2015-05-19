@@ -25,16 +25,24 @@
                     <th>Nome</th>
                     <th>Data de Nascimento</th>
                     <th>Naturalidade</th>
-                    <xsl:for-each select="catalogo/id">
+                    <xsl:for-each select="catalogo/bug">
+                        <xsl:sort select="nome" order="descending" data-type="text"/>
                         <tr>
                             <td>
-                                <xsl:value-of select="nome"/>       
+                                <a>
+                                    <xsl:attribute name="href">
+                                        <xsl:value-of select="link"/>
+                                    </xsl:attribute>
+                                    <xsl:value-of select="nome"/>
+                                </a>
+                                       
                             </td>
                             <td>
                                 <xsl:value-of select="data_nasc"/>       
                             </td>
                             <td>
-                                <xsl:value-of select="naturalidade"/>       
+                                <!--<xsl:if test="naturalidade[@lang='PT']"/> -->
+                                <xsl:value-of select="naturalidade [@lang='PT']"/>       
                             </td>
                         </tr>
                     </xsl:for-each>

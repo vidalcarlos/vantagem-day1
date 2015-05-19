@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- Folha de estilo -->
+
+<?xml-stylesheet type="text/xsl" href="my1xml_10.xsl"?>
+<!--<!DOCTYPE catalogo SYSTEM "my1xml_10.dtd -->
+
+
+<catalogo creatDate="2015-05-19"
+            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+            xsi:noNamespaceSchemaLocation="http://marinha.pt/xsd/my1xml.xsd">
+    <id tag="BB">
+        <nome>Brigitte  Bardot</nome>
+        <data_nasc>28-09-1934</data_nasc>
+        <naturalidade lang="PT">França</naturalidade>
+        <naturalidade lang="EN">France</naturalidade>
+    </id>
+    <id tag="MM">
+        <nome>Marilyn Monroe</nome>
+        <data_nasc>01-06-1926</data_nasc>
+        <naturalidade lang="PT">EUA</naturalidade>
+        <naturalidade lang="EN">USA</naturalidade>
+    </id>
+    <id tag="MN">
+        <nome>Mónica Naranjo</nome>
+        <data_nasc>23-05-1974</data_nasc>
+        <naturalidade lang="PT">Espanha</naturalidade>
+        <naturalidade lang="EN">Spanish</naturalidade>
+    </id>
+    
+</catalogo>
